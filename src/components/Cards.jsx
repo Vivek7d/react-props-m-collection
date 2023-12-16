@@ -1,13 +1,14 @@
 import React from "react";
 function Cards(props){
     return(
-    <div className="card-container">
-        <h2 style={{textAlign:"center"}}>{props.title}</h2>
-        <div className="image-container">
-            <img src={props.image} alt="moviesPoster"/>
+    <div className="card-container" >
+        <div className="card" data-aos="fade-down" >
+            <img src={props.img} alt="poster"/>
+            <div className="card-content">
+                <h3>{props.title}</h3>
+                <p>{props.year}</p>
+            </div>
         </div>
-        <p style={{textAlign:"center"}}>{props.year}</p>
-        
     </div>
     );
 }
